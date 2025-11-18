@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>CableHouse Agenda</title>
+		<!-- Loading third party fonts -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		<style>
+.schedule-table {
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.9rem;
+}
+
+.schedule-table caption {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.schedule-table thead th {
+    padding: 12px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.schedule-table tbody th { /* Time column */
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    width: 100px; /* Give time column a fixed width */
+    vertical-align: top;
+    background-color: #fd5927;
+    border: 1px solid #dee2e6;
+}
+
+.schedule-table tbody td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    vertical-align: top; /* Important for rowspan */
+}
+
+/* Session Styling */
+.session {
+    padding: 10px;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.session-title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.session-speaker {
+    font-size: 0.85rem;
+    color: #555;
+    display: block;
+}
+.session-details {
+    font-size: 0.85rem;
+    margin-top: 8px;
+    color: #666;
+}
+
+/* Color coding for session types */
+.session-keynote { background-color: white; border-left: 4px solid #e74c3c; }
+.session-talk { background-color: white; border-left: 4px solid #3498db; }
+.session-break { background-color: white; border-left: 4px solid #95a5a6; }
+.session-workshop { background-color: white; border-left: 4px solid #f39c12; }
+</style>
+		<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="dummy/logolong.png" alt="Site Title">
+						
+					</a> <!-- #branding -->
+					
+					<nav class="main-navigation">
+						<button type="button" class="toggle-menu"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a href="gallery.html">Gallery</a></li>
+							<!--<li class="menu-item"><a href="download.html">Download</a></li>-->
+							<li class="menu-item current-menu-item"><a href="agenda.html">Agenda</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> <!-- .menu -->
+					</nav> <!-- .main-navigation -->
+					<div class="mobile-menu"></div>
+				</div>
+			</header> <!-- .site-header -->
+			
+			
+				<div class="fullwidth-block inner-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="content">
+									<h2 class="entry-title">Agenda</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+<table class="schedule-table">
+    <caption>Upcoming Events</caption>
+    <thead>
+       <tr>
+            <th>Date</th>
+            <th scope="col">Venue</th>
+            <th scope="col">Showtime</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">10 Nov 2025</th>
+            <td>
+                <div class="session session-talk">
+                    <span class="session-title">Ziggo Dome</span>
+                    <span class="session-speaker">105 Random street Amsterdam</span>
+                </div>
+            </td>
+             <td>
+                <div class="session session-talk">
+                    <span class="session-title">20:30 to 23:30</span>
+                    
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">12 Feb 2026</th>
+            <td>
+                <div class="session session-talk">
+                    <span class="session-title">Paradiso</span>
+                    <span class="session-speaker">Amsterdam</span>
+                </div>
+            </td>
+            <td>
+                <div class="session session-talk">
+                    <span class="session-title">22;00 to 01:00</span>
+                    
+                </div>
+            </td>
+        </tr>
+       
+    </tbody>
+</table>
+				
+	<div class="fullwidth-block inner-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="content">
+									<h2 class="entry-title"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+<table class="schedule-table">
+    <caption>Past Events 2025</caption>
+    <thead>
+       <tr>
+            <th>Date</th>
+            <th scope="col">Venue</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">19 Oct 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Jazzcafé Bebop</span>
+                    <span class="session-speaker">Delft</span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <th scope="row">18 Oct 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café De Stamboom</span>
+                    <span class="session-speaker">Den Haag</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">10 Oct 2025</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">JJ Music House</span>
+                    <span class="session-speaker">Zoetermeer</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">26 Jul 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café The Hide Away</span>
+                    <span class="session-speaker">
+Dordrecht</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">17 May 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Ockfest</span>
+                    <span class="session-speaker">Villa Ockenburgh Den Haag</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">16 May 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">JJ Music House</span>
+                    <span class="session-speaker">Zoetemeer</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">26 Apr 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Koningsdag</span>
+                    <span class="session-speaker">Capelle aan den Ijssel</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">12 Apr 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Bluescafé</span>
+                    <span class="session-speaker">Apeldoorn</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">23 Feb 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Blues Festival Delft</span>
+                    <span class="session-speaker">De Koperen Kat</span>
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <th scope="row">23 Feb 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Blues Festival Delft</span>
+                    <span class="session-speaker">Café De Waag</span>
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <th scope="row">15 Feb 2025 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Dorpshuis de Schalm</span>
+                    <span class="session-speaker">Westwoud</span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>			
+				
+		<div class="fullwidth-block inner-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-7">
+								<div class="content">
+									<h2 class="entry-title"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+<table class="schedule-table">
+    <caption>Past Events 2024</caption>
+    <thead>
+       <tr>
+            <th>Date</th>
+            <th scope="col">Venue</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">22 Dec 2024 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Bluespodium L´Esprit</span>
+                    <span class="session-speaker">Barendrecht</span>
+                </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <th scope="row">16 Nov 2024 </th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café Stroop</span>
+                    <span class="session-speaker">Bosschenhoofd</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">09 Nov 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café De Stamboom</span>
+                    <span class="session-speaker">Den Haag</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">27 Oct 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Bluesroute</span>
+                    <span class="session-speaker">Helmond</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">16 Oct 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Oan't Wetter</span>
+                    <span class="session-speaker">Grou</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">28 Sep 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Bluesfestival Classics</span>
+                    <span class="session-speaker">Boskoop</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">24 Aug 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café de Klok</span>
+                    <span class="session-speaker">Delft</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">06 Jul 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Zeehelden Festival</span>
+                    <span class="session-speaker">Den Haag</span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">26 Jun 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café Animo</span>
+                    <span class="session-speaker">Den Haag</span>
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <th scope="row">31 May 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Café de Klok</span>
+                    <span class="session-speaker">Delft</span>
+                </div>
+            </td>
+        </tr>
+         <tr>
+            <th scope="row">23 May 2024</th>
+            <td colspan="2"> <!-- Use colspan for a session spanning all tracks -->
+                <div class="session session-keynote">
+                    <span class="session-title">Bluezy RTV-Ridderkerk</span>
+                    <span class="session-speaker">Ridderkerk</span>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>					
+								
+
+				
+			
+
+						<footer class="site-footer">
+				<div class="container">
+					<img src="dummy/logolong.png" alt="Site Name">
+					
+					
+					
+					
+					<div class="social-links">
+						<a href="https://www.facebook.com/Cablehouse.band" target="_blank"><i class="fa fa-facebook-square"></i></a>
+						
+						<a href="https://www.youtube.com/@CableHouse-Blues-Band" target="_blank"><i class="fa fa-youtube"></i></a>
+						
+					</div> <!-- .social-links -->
+					
+					<p class="copy"></p>
+				</div>
+			</footer> <!-- .site-footer -->
+		</div> <!-- #site-content -->
+
+		<script src="js/jquery-1.11.1.min.js"></script>		
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+                            
+	</body>
+</html>
