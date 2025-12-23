@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^7.0",
+        "symfony/polyfill-ctype": "^1.30",
+        "symfony/polyfill-mbstring": "^1.30",
+        "composer/ca-bundle": "^1.4"
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.33"
+        }
+    }
+}
