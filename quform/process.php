@@ -222,6 +222,10 @@ $captcha->addValidator('identical', array('token' => 'catch'));
 $captcha->setIsHidden(true);
 $form->addElement($captcha);
 
+$honeypot = new Quform_Element('field');
+$honeypot->addValidator('honeypot');
+$form->addElement($honeypot);
+
 /** END FORM ELEMENT CONFIGURATION **/
 
 function process(Quform $form, array &$config)
