@@ -215,13 +215,13 @@ $form->addElement($message);
  * Filters: Trim
  * Validators: Required, Identical
  */
-$captcha = new Quform_Element('type_the_word', 'Type the word');
+/**$captcha = new Quform_Element('type_the_word', 'Type the word');
 $captcha->addFilter('trim');
 $captcha->addValidator('required');
 $captcha->addValidator('identical', array('token' => 'catch'));
 $captcha->setIsHidden(true);
 $form->addElement($captcha);
-
+*/
 $honeypot = new Quform_Element('field');
 $honeypot->addValidator('honeypot');
 $form->addElement($honeypot);
