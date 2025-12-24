@@ -43,12 +43,12 @@
 	color: #bbb;
 	border: solid 1px #000;
 	padding: 2px;
-	background: #161616;
+	background: #e3e1e1;
 }
 .quform-theme-minimal-dark .quform-elements .quform-element select {padding: 1px;}
 /*Fix Chrome select (no background image sorry!)*/
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-	.quform-theme-minimal-dark .quform-elements .quform-element select {background: #161616;}
+	.quform-theme-minimal-dark .quform-elements .quform-element select {background:#e3e1e1;}
 }
 /*Hover element*/
 .quform-theme-minimal-dark .quform-elements .quform-element-text input:hover,
