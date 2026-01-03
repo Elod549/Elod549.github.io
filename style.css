@@ -1986,8 +1986,8 @@ body {
       font-weight: 900; }
     /* line 100, sass/layout/_content.scss */
     .content .post .entry-date .month {
-      font-size: 14px;
-      font-size: 0.875em;
+      font-size: 12px;
+      
       text-transform: uppercase; }
   /* line 105, sass/layout/_content.scss */
   .content .post .featured-image {
